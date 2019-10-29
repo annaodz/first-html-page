@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: verdana;
+    color: navy;
+    margin-left: 20px;
+  }
+  h2{
+    text-align: center;
+    font-family: verdana;
+      color: navy;
+  }
+  table, th, td {
+     border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+th, td {
+    padding: 15px;
+    margin: 5px;
+  }
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  /* Style the header */
+header {
+    background-color: rgb(136, 142, 177);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+ 
+  nav {
+    float: left;
+    width: 30%;
+    height: 30%;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ol {
+    list-style-type: none;
+    padding: 15px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 15px;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f4f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
