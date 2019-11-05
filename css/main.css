@@ -9,7 +9,7 @@ body {
     color: navy;
     margin-left: 20px;
   }
-  h2{
+  h2 {
     text-align: center;
     font-family: verdana;
       color: navy;
@@ -23,7 +23,7 @@ th, td {
     padding: 15px;
     margin: 5px;
   }
-  section {
+section {
     display: -webkit-flex;
     display: flex;
   }
@@ -38,7 +38,7 @@ header {
   }
   
  
-  nav {
+.navigation {
     float: left;
     width: 30%;
     height: 30%;
@@ -47,12 +47,12 @@ header {
   }
   
   /* Style the list inside the menu */
-  nav ol {
-    list-style-type: none;
+ .country1 {
+    list-style-type: square;
     padding: 15px;
   }
-  nav ul {
-    list-style-type: none;
+  .country2 {
+    list-style-type: symbols(1);
     padding: 15px;
   }
   

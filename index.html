@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <head>
     <title>Web page</title>
+    <meta name="author" content="Anna Odziomek">
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    </head>
 <body>
 
 <h1>My first page</h1>
@@ -35,7 +37,7 @@
 <h2>Several uses of html forms</h2>
 <form>
     <label>Name</label>
-    <input type=text>
+    <input type="text">
     <input type="submit" value="Click to submit">
 </form>
 <br>
@@ -46,9 +48,9 @@
     <option value="audi">Audi</option>
   </select>
 <br><br><br>
-<a href="https://www.shutterstock.com/pl/search/click+me">
- <button type="button" onclick="alert('Uwaga!')">Click Me!</button>
-</a>
+
+ <button id="my-button" type="button">Click Me!</button>
+
  <br><br><br>
  <textarea name="message" rows="10" cols="30">
     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -56,33 +58,33 @@
 
 
 <h2>Clickable image</h2>
-    <a href="https://gazetakrakowska.pl/wiadomosci/krakow/" target="_blank"><img src="krakow.jpg" alt="krakow" width="40%" height="40%"></a>
+    <a href="https://gazetakrakowska.pl/wiadomosci/krakow/" target="_blank"><img src="./media/img/krakow.jpg" alt="krakow" width="340" height="340"></a>
 
-    <a href="https://www.francja.pl/alpy-francuskie.xml" target="_self"><img src="mountains.jpg" alt="mountains" width="40%" height="40%"></a>
+    <a href="https://www.francja.pl/alpy-francuskie.xml" target="_self"><img src="./media/img/mountains.jpg" alt="mountains" width="340" height="340"></a>
 
 
 <h2>List and styles types</h2>
 <header>
-        <h2>Cities</h2>
+<h2>Cities</h2>
       </header>
       <section>
-        <nav>
-          <ul>
+              <nav class="navigation">
+          <ul class="country1">
             <li><a href="http://www.krakow.pl/">Cracow</a></li>
             <li><a href="https://www.um.warszawa.pl/">Warsaw</a></li>
             <li><a href="https://www.um.warszawa.pl/">Gdansk</a></li>
           </ul>
-          <ol style="list-style-type:circle;">
-                <li>Poznan</li>
-                <li>Wroclaw</li>
-                <Li>Lublin</Li>
+          <ol class="country2">
+                <li><a href="http://www.poznan.pl/">Poznan</a></li>
+                <li><a href="https://www.wroclaw.pl/">Wroclaw</a></li>
+                <li><a href="https://lublin.eu/">Lublin</a></li>
             </ol>
         </nav>
         
         <article>
-          <h1>Cracow</h1>
+          <h2>Cracow</h2>
           <p>Cracow is the second largest and one of the oldest cities in Poland. Situated on the Vistula River in the Lesser Poland region, the city dates back to the 7th century.</p>
-         <p>Cracow was the official capital of Poland until 1596 and has traditionally been one of the leading centres of Polish academic, economic, cultural and artistic life. Cited as one of Europe's most beautiful cities, its Old Town was declared a UNESCO World Heritage Site.</p>
+          <p>Cracow was the official capital of Poland until 1596 and has traditionally been one of the leading centres of Polish academic, economic, cultural and artistic life. Cited as one of Europe's most beautiful cities, its Old Town was declared a UNESCO World Heritage Site.</p>
         </article>
       </section>
       
@@ -98,5 +100,13 @@
       Click me to display Date and Time</button>
       
       <p id="demo"></p>
+
+<script>
+  var myObj = document.getElementById("my-button");
+  myObj.onclick = function(){
+    alert("alert");
+    window.location = "http://onet.pl";
+  }
+</script>
 </body>
 </html>
