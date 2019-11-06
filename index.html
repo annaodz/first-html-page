@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
   <title>Web page</title>
   <meta name="author" content="Anna Odziomek">
@@ -107,8 +108,16 @@
 
   <h2>My First JavaScript</h2>
 
-  <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-    Click me to display Date and Time</button>
+  <!-- <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time</button> -->
+
+  <button id="date">Click me to display Date and Time</button>
+  <script>
+    var mdate = document.getElementById("date");
+    mdate.onclick = function () {
+      document.getElementById('demo').innerHTML = new Date();
+    }
+  </script>
 
   <p id="demo"></p>
 
