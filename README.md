@@ -1,5 +1,5 @@
-# Project Name
-> First-html-page
+# First-html-page
+
 ---
 ## Table of contents
 * [General info](#general-info)
@@ -10,7 +10,7 @@
 * [Contact](#contact)
 ---
 ## General info
-This project aimed to master the basics of html language and basics of css and learn about github and basic information about what git is.
+In this project I learned basics of html, css, javascript and github.
 
 ---
 ## Technologies
