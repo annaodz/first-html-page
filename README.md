@@ -19,7 +19,8 @@ In this project I learned basics of html, css, javascript and github.
 * javascript
 ---
 ## Setup
-Clone this repo to your desktop and run npm install to install all the dependencies
+Clone this repo to your desktop and run npm install, after that you can use to built in webserver to launch the page localy (run http server in the console).
+
 ---
 ## Status
 Project is: _in progress_
