@@ -15,8 +15,8 @@ In this project I learned basics of html, css, javascript and github.
 ---
 ## Technologies
 * html
-* html5
 * css
+* javascript
 ---
 ## Setup
 Clone this repo to your desktop and run npm install to install all the dependencies
